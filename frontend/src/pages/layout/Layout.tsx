@@ -47,13 +47,10 @@ const Layout = () => {
                 <Stack horizontal verticalAlign="center" horizontalAlign="space-between">
                     <Stack horizontal verticalAlign="center">
                         <img
-                            src={Contoso}
+                            src={PASO}
                             className={styles.headerIcon}
                             aria-hidden="true"
                         />
-                        <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>Contoso</h1>
-                        </Link>
                     </Stack>
                     <Stack horizontal tokens={{ childrenGap: 4 }}>
                         {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) &&
