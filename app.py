@@ -34,11 +34,11 @@ async def index():
     return await bp.send_static_file("index.html")
 
 @bp.route("/favicon-16x16.png")
-async def favicon():
+async def favicon16():
     return await bp.send_static_file("favicon-16x16.png")
 
 @bp.route("/favicon-32x32.png")
-async def favicon():
+async def favicon32():
     return await bp.send_static_file("favicon-32x32.png")
 
 @bp.route("/assets/<path:path>")
